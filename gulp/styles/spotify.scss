@@ -1,0 +1,220 @@
+@import 'fonts';
+@import 'main-colors';
+@import 'secondary-colors';
+
+$background-color: #121212;
+$side-color: #040404;
+$player-color: #282828;
+$letter-color: #878787;
+
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin simple-list {
+    list-style-type: none;
+}
+
+.navigation {
+    background-color: $background-color;
+    width: 1208px;
+    height: 50px;
+    color: $letter-color;
+    @include flex-row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 192px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+
+    &__search {
+        font-size: 1.5em;
+        @include flex-row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100px;
+    }
+
+    &__search_bar {
+        @include flex-row;
+        align-items: center;
+    }
+
+    &__search_bar input {
+        width: 20em;
+        font-family: $general-font;
+        font-weight: bold;
+        border-radius: 25px;
+        text-align: center;
+    }
+
+    &__search_bar i {
+        margin-left: -265px;
+        font-size: 0.8em;
+    }
+
+    &__profile > button {
+        border-radius: 25px;
+        background-color: $player-color;
+        color: white;
+        border: 1px solid white;
+        width: 10em;
+        font-family: $general-font;
+        }
+}
+
+.content {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: $background-color;
+    font-family: $general-font;
+    top: 30px;
+    left: 190px;
+    padding-bottom: 100px;
+    position: relative;
+    width: 1200px;
+    height: 100%;
+    padding-left: 10px;
+    padding-top: 10px;
+    
+    &__main {
+        @include flex-row;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 1150px;
+    }
+
+    &__main_preview {
+        height: 250px;
+        width: 350px;
+        border-radius: 15px;
+        color: white;
+        font-family: $general-font;
+        font-size: 1.5em;
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+
+    &__secondary {
+        @include flex-row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 1150px;
+    }
+
+    &__secondary_preview {
+        height: 165px;
+        width: 165px;
+        margin-bottom: -10px;
+        border-radius: 15px;
+        color: white;
+        font-family: $general-font;
+        font-size: 1.2em;
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+}
+
+.list {
+    font-family: $general-font;
+    background-color: $side-color;
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: $letter-color;
+    list-style-type:none;
+    font-size: 1em;
+    z-index: 0;
+
+    &__logo {
+        font-family: $logo-font;
+        font-size: 2em;
+        text-align: center;
+        color: white;
+        margin-top: 1em;
+    }
+
+    &__home,
+    &__playlists,
+    &__categories, {
+        @include simple-list;
+    }
+
+    &__home i,
+    &__playlists i,
+    &__install i {
+        margin-right: 1em;
+    }
+
+    &_modify-font-size {
+        font-size: 0.8em;
+        letter-spacing: 0.2em;
+        margin-left: 3em;
+    }
+
+    &__install {
+        margin-left: 3em;
+    }
+
+    &__home li:hover,
+    &__playlists li:hover,
+    &__categories li:hover,
+    &__install:hover {
+        background-color: $player-color;
+    }
+}
+
+.line {
+    height: 0.1em;
+    background-color: $player-color;
+    border: none;
+}
+
+.listening {
+    @include flex-row;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+    background-color: $player-color;
+    width: 1400px;
+    height: 100px;
+    color: $letter-color;
+    position: fixed;
+    bottom: 0;
+
+    &__song,
+    &__player,
+    &__more {
+        @include flex-row;
+        align-items: center;
+        justify-content: space-between;
+        width: 200px;
+    }
+
+    &__song-now {
+        line-height: 5px;
+    }
+
+    &__song-now p:nth-child(1) {
+        color: white;
+    }   
+
+    &__song > i:nth-child(3) {
+        color: #60BA57;
+    }
+    
+    &__player {
+        font-size: 1.5em;
+    }
+} 
+
+.volume-line {
+    width: 100px;
+    border-bottom: 2px solid grey;
+    }
