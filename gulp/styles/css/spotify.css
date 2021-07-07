@@ -1,0 +1,221 @@
+.content__main p:nth-child(1) {
+  background-color: #D6392E; }
+
+.content__main p:nth-child(2) {
+  background-color: #B3DDB8; }
+
+.content__main p:nth-child(3) {
+  background-color: #4542DF; }
+
+.content__secondary p:nth-child(1) {
+  background-color: #D07F32; }
+
+.content__secondary p:nth-child(2) {
+  background-color: #8FB0BF; }
+
+.content__secondary p:nth-child(3) {
+  background-color: #428168; }
+
+.content__secondary p:nth-child(4) {
+  background-color: #90AFBD; }
+
+.content__secondary p:nth-child(5) {
+  background-color: #9E82B3; }
+
+.content__secondary p:nth-child(6) {
+  background-color: #454446; }
+
+.content__secondary p:nth-child(7) {
+  background-color: #DD8730; }
+
+.content__secondary p:nth-child(8) {
+  background-color: #4A86DC; }
+
+.content__secondary p:nth-child(9) {
+  background-color: #9A7DB0; }
+
+.content__secondary p:nth-child(10) {
+  background-color: #D8AC58; }
+
+.content__secondary p:nth-child(11) {
+  background-color: #E2B55A; }
+
+.content__secondary p:nth-child(12) {
+  background-color: #C8442D; }
+
+.content__secondary p:nth-child(13) {
+  background-color: #7B648C; }
+
+.content__secondary p:nth-child(14) {
+  background-color: #728B94; }
+
+.content__secondary p:nth-child(15) {
+  background-color: #373738; }
+
+.content__secondary p:nth-child(16) {
+  background-color: #9E2170; }
+
+.content__secondary p:nth-child(17) {
+  background-color: #366A55; }
+
+.content__secondary p:nth-child(18) {
+  background-color: #9F2070; }
+
+.navigation {
+  background-color: #121212;
+  width: 1208px;
+  height: 50px;
+  color: #878787;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 192px;
+  position: fixed;
+  top: 0;
+  z-index: 1; }
+  .navigation__search {
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100px; }
+  .navigation__search_bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+  .navigation__search_bar input {
+    width: 20em;
+    font-family: "Hind Guntur", sans-serif;
+    font-weight: bold;
+    border-radius: 25px;
+    text-align: center; }
+  .navigation__search_bar i {
+    margin-left: -265px;
+    font-size: 0.8em; }
+  .navigation__profile > button {
+    border-radius: 25px;
+    background-color: #282828;
+    color: white;
+    border: 1px solid white;
+    width: 10em;
+    font-family: "Hind Guntur", sans-serif; }
+
+.content {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background-color: #121212;
+  font-family: "Hind Guntur", sans-serif;
+  top: 30px;
+  left: 190px;
+  padding-bottom: 100px;
+  position: relative;
+  width: 1200px;
+  height: 100%;
+  padding-left: 10px;
+  padding-top: 10px; }
+  .content__main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 1150px; }
+  .content__main_preview {
+    height: 250px;
+    width: 350px;
+    border-radius: 15px;
+    color: white;
+    font-family: "Hind Guntur", sans-serif;
+    font-size: 1.5em;
+    padding-top: 10px;
+    padding-left: 10px; }
+  .content__secondary {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 1150px; }
+  .content__secondary_preview {
+    height: 165px;
+    width: 165px;
+    margin-bottom: -10px;
+    border-radius: 15px;
+    color: white;
+    font-family: "Hind Guntur", sans-serif;
+    font-size: 1.2em;
+    padding-top: 10px;
+    padding-left: 10px; }
+
+.list {
+  font-family: "Hind Guntur", sans-serif;
+  background-color: #040404;
+  width: 200px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: #878787;
+  list-style-type: none;
+  font-size: 1em;
+  z-index: 0; }
+  .list__logo {
+    font-family: "Cambay", sans-serif;
+    font-size: 2em;
+    text-align: center;
+    color: white;
+    margin-top: 1em; }
+  .list__home, .list__playlists, .list__categories {
+    list-style-type: none; }
+  .list__home i,
+  .list__playlists i,
+  .list__install i {
+    margin-right: 1em; }
+  .list_modify-font-size {
+    font-size: 0.8em;
+    letter-spacing: 0.2em;
+    margin-left: 3em; }
+  .list__install {
+    margin-left: 3em; }
+  .list__home li:hover,
+  .list__playlists li:hover,
+  .list__categories li:hover, .list__install:hover {
+    background-color: #282828; }
+
+.line {
+  height: 0.1em;
+  background-color: #282828;
+  border: none; }
+
+.listening {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+  background-color: #282828;
+  width: 1400px;
+  height: 100px;
+  color: #878787;
+  position: fixed;
+  bottom: 0; }
+  .listening__song, .listening__player, .listening__more {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px; }
+  .listening__song-now {
+    line-height: 5px; }
+  .listening__song-now p:nth-child(1) {
+    color: white; }
+  .listening__song > i:nth-child(3) {
+    color: #60BA57; }
+  .listening__player {
+    font-size: 1.5em; }
+
+.volume-line {
+  width: 100px;
+  border-bottom: 2px solid grey; }

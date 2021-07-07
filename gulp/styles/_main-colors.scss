@@ -1,0 +1,13 @@
+.content {
+    &__main p:nth-child(1) {
+        background-color: #D6392E;
+    }
+
+    &__main p:nth-child(2) {
+        background-color: #B3DDB8;
+    }
+
+    &__main p:nth-child(3) {
+        background-color: #4542DF;
+    }
+}

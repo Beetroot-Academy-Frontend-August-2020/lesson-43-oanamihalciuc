@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify homepage</title>
+    <link rel="stylesheet" href="./styles/css/spotify.css">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cambay:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+</head>
+<body>
+    <aside class="list">
+        <div class="list__logo"><i class="fab fa-spotify"></i>Spotify
+        </div>
+        <ul class="list__home">
+                <li><i class="fas fa-home"></i>Home</li>
+                <li><i class="fas fa-search"></i>Search</li>
+                <li><i class="fas fa-stream"></i>Your Library</li>
+        </ul>
+        <p class="list_modify-font-size">PLAYLISTS</p>
+        <ul class="list__playlists">
+            <li><i class="fas fa-plus"></i>Create Playlist</li>
+            <li><i class="fas fa-heart"></i>Liked Songs</li>
+        </ul>
+        <hr class="line">
+        <ul class="list__categories">
+            <li>Women of Rock</li>
+            <li>Rock Classics</li>
+            <li>Discover Weekly</li>
+            <li>Your Daily Mix</li>
+            <li>Led Zeppelin/Pink Floyd</li>
+            <li>AC/DC</li>
+        </ul>
+        <br>
+        <p class="list__install"><i class="fas fa-download"></i>Install App</p>
+    </aside>
+    <section>
+        <div class="navigation">
+            <div class="navigation__search">
+                <i class="fas fa-chevron-circle-left"></i>
+                <i class="fas fa-chevron-circle-right"></i>
+                <label class="navigation__search_bar">
+                <input type="text" placeholder="Search for Artists, Songs or Podcasts" name="search">
+                <i class="fas fa-search"></i>
+                </label>
+            </div>
+            <div class="navigation__profile">
+                <button class="hello" type="button">Upgrade</button>
+                <button type="button">User Profile<i class="fas fa-angle-down"></i></button>
+            </div>
+     </div>
+    </section>
+    <section>
+        <div class="content">
+            <p>Your Top Genres</p>
+            <div class="content__main">
+                <p class="content__main_preview">Rock</p>
+                <p class="content__main_preview">Pop</p>
+                <p class="content__main_preview">Indie</p>
+            </div>
+            <p>Browse all</p>
+            <div class="content__secondary">
+                <p class="content__secondary_preview">Podcasts</p>
+                <p class="content__secondary_preview">Made for you</p>
+                <p class="content__secondary_preview">Charts</p>
+                <p class="content__secondary_preview">New Releases</p>
+                <p class="content__secondary_preview">Discover</p>
+                <p class="content__secondary_preview">Amplify: Women's History Month</p>
+                <p class="content__secondary_preview">Hip-Hop</p>
+                <p class="content__secondary_preview">Mood</p>
+                <p class="content__secondary_preview">Decades</p>
+                <p class="content__secondary_preview">Country</p>
+                <p class="content__secondary_preview">Workout</p>
+                <p class="content__secondary_preview">Latin</p>
+                <p class="content__secondary_preview">Focus</p>
+                <p class="content__secondary_preview">Chill</p>
+                <p class="content__secondary_preview">Tastemakers</p>
+                <p class="content__secondary_preview">R&B</p>
+                <p class="content__secondary_preview">Folk & Acoustic</p>
+                <p class="content__secondary_preview">Party</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="listening">
+        <div class="listening__song">
+            <img src="https://i.scdn.co/image/ab67616d0000b2736189fe28aad74732170e6b1b" alt="Tom Doolie Cover Album Photo" height="80">
+            <div class="listening__song-now">
+            <p>New Fields</p>
+            <p>Tom Doolie</p>
+            </div>
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-desktop"></i>
+        </div>
+        <div class="listening__player">
+            <i class="fas fa-random"></i>
+            <i class="fas fa-step-backward"></i>
+            <i class="far fa-play-circle"></i>
+            <i class="fas fa-step-forward"></i>
+            <i class="fas fa-redo-alt"></i>
+        </div>
+        <div class="listening__more">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-hdd"></i>
+            <i class="fas fa-volume-up"></i>
+            <p class="volume-line"></p>
+        </div>
+    </div>
+    </footer>
+</body>
+</html>
